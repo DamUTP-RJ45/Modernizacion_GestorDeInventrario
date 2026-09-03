@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@/css/app.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox styleClass="sideBar1" BorderPane.alignment="CENTER">
+         <children>
+            <HBox styleClass="sideBar1-H">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/images/icons/hamlogovector.png" />
+                     </image>
+                  </ImageView>
+                  <Separator orientation="VERTICAL" styleClass="separator-V-Red" />
+                  <VBox styleClass="sideBar1-V">
+                     <children>
+                        <Label styleClass="title-White" text="H A M   H O U S E">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="title-White" text="C R E M E R I A S">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="40.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" styleClass="imageLOG">
+                           <image>
+                              <Image url="@/images/icons/entry/entry_icon_RED_V1.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="10.0" top="15.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" styleClass="imageLOG">
+                           <image>
+                              <Image url="@/images/icons/output/output_icon_RED_V1.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="10.0" top="15.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Separator prefWidth="200.0" />
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/images/icons/history/history_icon_RED_V3.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="10.0" top="15.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Separator prefWidth="200.0" />
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/images/icons/config/config_icon_RED_V1.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="10.0" top="15.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="60.0" styleClass="B-Orange" text="E N T R A D A S">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></Button>
+                        <Button mnemonicParsing="false" prefHeight="60.0" styleClass="B-Orange" text="S A L I D A S">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></Button>
+                        <Separator prefWidth="200.0" />
+                        <Button mnemonicParsing="false" prefHeight="60.0" styleClass="B-Orange" text="H I S T O R I A L">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></Button>
+                        <Separator prefWidth="200.0" />
+                        <Button mnemonicParsing="false" prefHeight="60.0" styleClass="B-Orange" text="C O N F I G U R A C I O N">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

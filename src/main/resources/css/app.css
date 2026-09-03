@@ -1,0 +1,152 @@
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: white;
+}
+
+/* T I T L E */
+
+.title-Orange{
+    -fx-text-fill: #f9a11b;
+    -fx-font-weight: bold;
+}
+
+.title-Orange-DARK{
+    -fx-text-fill: #C76E00;
+}
+
+.title-Orange-LIGHT{
+    -fx-text-fill: #FFDBBB;
+}
+
+.title-White{
+    -fx-text-fill: White;
+    -fx-font-weight: bold;
+}
+
+/* Style HBox's */
+
+.sideBar1 {
+    -fx-background-color: #FFDBBB;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-fill-width: true;
+}
+
+.sideBar1-H {
+    -fx-spacing: 5;
+}
+
+.sideBar2-H{
+    -fx-max-width: infinity;
+    -fx-fill-width: true;
+}
+
+.sideBar1-V{
+    -fx-alignment: center_left;
+}
+
+/* D I V I D E R S */
+
+.separator-V-Red .line {
+    -fx-border-color: #ea2f40;
+    -fx-border-width: 0 2 0 0;
+}
+
+.separator-H-Red .line {
+    -fx-border-color: #ea2f40;
+    -fx-border-width: 0 0 2 0;
+}
+
+/* B U T T O N S */
+
+.B-Orange{
+    -fx-background-color: transparent;
+    -fx-font-size: 20px;
+    -fx-text-fill: White;
+    -fx-padding: 10 15 10 15;
+    -fx-background-radius: 8;
+    -fx-max-width: infinity;
+    -fx-alignment: center_left;
+}
+
+.B-Orange:hover {
+    -fx-background-color: #ea2f40;
+}
+
+/* I M A G E S */
+.imageLOG{
+    -fx-fit-width: 10px;
+    -fx-fit-height: 10px;
+}
+
+/*
+.sidebar {
+    -fx-background-color: #FFDBBB;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-padding: 20;
+    -fx-spacing: 10;
+}
+
+.bar-H {
+ -fx-spacing: 5
+}
+
+.container-V-label{
+     -fx-max-weight: infinity;
+     -fx-alignment: left;
+}
+
+.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f9a11b;
+}
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+    -fx-text-fill: #f9a11b;
+    -fx-padding: 10 15 10 15;
+    -fx-background-radius: 8;
+}
+
+.menu-button:hover {
+    -fx-background-color: #FFE0B2;
+}
+
+.center-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #424242;
+}
+
+.first-title {
+    -fx-font-size: 20px;
+    -fx-max-weight: infinity;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.second-title {
+    -fx-font-size: 16px;
+    -fx-max-weight: infinity;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.card {
+    -fx-background-color: #fffffd;
+    -fx-background-radius: 12px 12px 0px 0px;
+    -fx-border-radius: 12px 12px 0px 0px;
+    -fx-padding: 20;
+}
+
+.separator-V .line {
+    -fx-border-color: #ea2f40;
+}
+
+*/
