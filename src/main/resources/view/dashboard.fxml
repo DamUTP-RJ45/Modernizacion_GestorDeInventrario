@@ -11,11 +11,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@/css/app.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@/css/app.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <VBox styleClass="sideBar1" BorderPane.alignment="CENTER">
          <children>
-            <HBox styleClass="sideBar1-H">
+            <HBox styleClass="sideBar1-H" VBox.vgrow="NEVER">
                <children>
                   <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -39,9 +39,9 @@
                   </VBox>
                </children>
             </HBox>
-            <HBox>
+            <HBox styleClass="sideBar1-H" VBox.vgrow="NEVER">
                <children>
-                  <VBox prefHeight="200.0" prefWidth="40.0">
+                  <VBox prefWidth="40.0">
                      <children>
                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" styleClass="imageLOG">
                            <image>
@@ -59,17 +59,53 @@
                               <Insets bottom="15.0" left="10.0" top="15.0" />
                            </VBox.margin>
                         </ImageView>
-                        <Separator prefWidth="200.0" />
-                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                     </children>
+                  </VBox>
+                  <VBox prefWidth="214.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="60.0" styleClass="B-Red" text="ENTRADAS" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="60.0" styleClass="B-Red" text="SALIDAS" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox styleClass="sideBar1-H" VBox.vgrow="NEVER">
+               <children>
+                  <VBox prefWidth="40.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" styleClass="imageLOG">
                            <image>
-                              <Image url="@/images/icons/history/history_icon_RED_V3.png" />
+                              <Image url="@/images/icons/history/history_icon_RED_V2.png" />
                            </image>
                            <VBox.margin>
                               <Insets bottom="15.0" left="10.0" top="15.0" />
                            </VBox.margin>
                         </ImageView>
-                        <Separator prefWidth="200.0" />
-                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                     </children>
+                  </VBox>
+                  <VBox HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="60.0" styleClass="B-Red" text="HISTORIAL" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" styleClass="separator-H-Red" />
+            <HBox styleClass="sideBar1-H" VBox.vgrow="NEVER">
+               <children>
+                  <VBox prefWidth="40.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" styleClass="imageLOG">
                            <image>
                               <Image url="@/images/icons/config/config_icon_RED_V1.png" />
                            </image>
@@ -79,26 +115,13 @@
                         </ImageView>
                      </children>
                   </VBox>
-                  <VBox>
+                  <VBox HBox.hgrow="ALWAYS">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="60.0" styleClass="B-Orange" text="E N T R A D A S">
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="60.0" styleClass="B-Red" text="CONFIGURACION" VBox.vgrow="ALWAYS">
                            <VBox.margin>
                               <Insets />
-                           </VBox.margin></Button>
-                        <Button mnemonicParsing="false" prefHeight="60.0" styleClass="B-Orange" text="S A L I D A S">
-                           <VBox.margin>
-                              <Insets />
-                           </VBox.margin></Button>
-                        <Separator prefWidth="200.0" />
-                        <Button mnemonicParsing="false" prefHeight="60.0" styleClass="B-Orange" text="H I S T O R I A L">
-                           <VBox.margin>
-                              <Insets />
-                           </VBox.margin></Button>
-                        <Separator prefWidth="200.0" />
-                        <Button mnemonicParsing="false" prefHeight="60.0" styleClass="B-Orange" text="C O N F I G U R A C I O N">
-                           <VBox.margin>
-                              <Insets />
-                           </VBox.margin></Button>
+                           </VBox.margin>
+                        </Button>
                      </children>
                   </VBox>
                </children>

@@ -27,8 +27,8 @@
 
 .sideBar1 {
     -fx-background-color: #FFDBBB;
-    -fx-background-radius: 12;
-    -fx-border-radius: 12;
+    -fx-background-radius: 0 12 12 0;
+    -fx-border-radius: 0 12 12 0;
     -fx-padding: 10;
     -fx-spacing: 10;
     -fx-fill-width: true;
@@ -51,17 +51,17 @@
 
 .separator-V-Red .line {
     -fx-border-color: #ea2f40;
-    -fx-border-width: 0 2 0 0;
+    -fx-border-width: 0 1 0 0;
 }
 
 .separator-H-Red .line {
-    -fx-border-color: #ea2f40;
-    -fx-border-width: 0 0 2 0;
+    -fx-border-color: -color-primary;
+    -fx-border-width: 0 0 1 0;
 }
 
 /* B U T T O N S */
 
-.B-Orange{
+.B-Red{
     -fx-background-color: transparent;
     -fx-font-size: 20px;
     -fx-text-fill: White;
@@ -71,7 +71,7 @@
     -fx-alignment: center_left;
 }
 
-.B-Orange:hover {
+.B-Red:hover {
     -fx-background-color: #ea2f40;
 }
 
