@@ -1,3 +1,5 @@
+@import "colors.css";
+
 .root {
     -fx-font-family: "Segoe UI";
     -fx-background-color: white;
@@ -26,7 +28,7 @@
 /* Style HBox's */
 
 .sideBar1 {
-    -fx-background-color: #FFDBBB;
+    -fx-background-color: -color-secondary;
     -fx-background-radius: 0 12 12 0;
     -fx-border-radius: 0 12 12 0;
     -fx-padding: 10;
@@ -50,7 +52,7 @@
 /* D I V I D E R S */
 
 .separator-V-Red .line {
-    -fx-border-color: #ea2f40;
+    -fx-border-color: -color-primary;
     -fx-border-width: 0 1 0 0;
 }
 
@@ -64,7 +66,7 @@
 .B-Red{
     -fx-background-color: transparent;
     -fx-font-size: 20px;
-    -fx-text-fill: White;
+    -fx-text-fill: -color-primary;
     -fx-padding: 10 15 10 15;
     -fx-background-radius: 8;
     -fx-max-width: infinity;
@@ -72,7 +74,9 @@
 }
 
 .B-Red:hover {
-    -fx-background-color: #ea2f40;
+    -fx-background-radius: 8;
+    -fx-text-fill: -color-secondary;
+    -fx-background-color: -color-primary;
 }
 
 /* I M A G E S */
