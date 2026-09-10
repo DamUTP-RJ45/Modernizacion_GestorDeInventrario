@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@/css/app.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@/css/app.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <VBox styleClass="sideBar1" BorderPane.alignment="CENTER">
          <children>
@@ -46,7 +46,7 @@
                         <Insets bottom="15.0" top="15.0" />
                      </HBox.margin>
                      <image>
-                        <Image url="@/images/icons/entry/entry_icon_RED_V1.png" />
+                        <Image url="@/images/icons/entry/entry_icon_RED.png" />
                      </image>
                   </ImageView>
                   <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="B-Red" text="ENTRADAS" HBox.hgrow="ALWAYS">
@@ -62,7 +62,7 @@
                         <Insets bottom="15.0" top="15.0" />
                      </HBox.margin>
                      <image>
-                        <Image url="@/images/icons/output/output_icon_RED_V1.png" />
+                        <Image url="@/images/icons/output/output_icon_RED.png" />
                      </image>
                   </ImageView>
                   <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="B-Red" text="SALIDAS" HBox.hgrow="ALWAYS">
@@ -78,7 +78,7 @@
                         <Insets bottom="15.0" top="15.0" />
                      </HBox.margin>
                      <image>
-                        <Image url="@/images/icons/history/history_icon_RED_V2.png" />
+                        <Image url="@/images/icons/history/his_icon_RED.png" />
                      </image>
                   </ImageView>
                   <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="B-Red" text="HISTORIAL" HBox.hgrow="ALWAYS">
@@ -95,7 +95,7 @@
                         <Insets bottom="15.0" top="15.0" />
                      </HBox.margin>
                      <image>
-                        <Image url="@/images/icons/config/config_icon_RED_V1.png" />
+                        <Image url="@/images/icons/config/config_icon_RED.png" />
                      </image>
                   </ImageView>
                   <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="B-Red" text="CONFIGURACION" HBox.hgrow="ALWAYS">

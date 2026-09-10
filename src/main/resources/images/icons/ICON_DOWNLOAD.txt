@@ -1,0 +1,16 @@
+ICON DOWNLOAD:
+
+ENTRY:
+	https://yesicon.app/es/icon-park-outline/download-computer
+
+OUTPUT:
+	https://yesicon.app/es/icon-park-outline/error-computer
+
+HISTORY:
+	https://yesicon.app/es/tabler/device-desktop-search
+
+CONFIG:
+	https://yesicon.app/es/tabler/device-desktop-cog
+	
+
+	
