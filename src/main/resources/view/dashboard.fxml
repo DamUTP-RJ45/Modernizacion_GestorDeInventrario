@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@/css/app.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@/css/app.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <VBox styleClass="sideBar1" BorderPane.alignment="CENTER">
          <children>
@@ -25,83 +25,81 @@
                   <Separator orientation="VERTICAL" styleClass="separator-V-Red" />
                   <VBox styleClass="sideBar1-V">
                      <children>
-                        <Label styleClass="title-White" text="H A M   H O U S E">
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="title-White" text="CONTROL DE" textAlignment="CENTER" VBox.vgrow="ALWAYS">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Label styleClass="title-White" text="C R E M E R I A S">
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="title-White" text="INVENTARIO" textAlignment="CENTER" VBox.vgrow="ALWAYS">
                            <font>
-                              <Font size="14.0" />
+                              <Font size="20.0" />
                            </font>
                         </Label>
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="SUCURSAL" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS" />
                      </children>
                   </VBox>
                </children>
             </HBox>
             <HBox>
                <children>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
-                     <HBox.margin>
-                        <Insets bottom="15.0" top="15.0" />
-                     </HBox.margin>
-                     <image>
-                        <Image url="@/images/icons/entry/entry_icon_RED.png" />
-                     </image>
-                  </ImageView>
-                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="B-Red" text="ENTRADAS" HBox.hgrow="ALWAYS">
+                  <Button graphicTextGap="5.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="B-Red" text="ENTRADAS" HBox.hgrow="ALWAYS">
                      <HBox.margin>
                         <Insets bottom="5.0" top="5.0" />
-                     </HBox.margin></Button>
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons/entry/entry_icon_RED.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
                </children>
             </HBox>
             <HBox>
                <children>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
-                     <HBox.margin>
-                        <Insets bottom="15.0" top="15.0" />
-                     </HBox.margin>
-                     <image>
-                        <Image url="@/images/icons/output/output_icon_RED.png" />
-                     </image>
-                  </ImageView>
                   <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="B-Red" text="SALIDAS" HBox.hgrow="ALWAYS">
                      <HBox.margin>
                         <Insets bottom="5.0" top="5.0" />
-                     </HBox.margin></Button>
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons/output/output_icon_RED.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
                </children>
             </HBox>
             <HBox>
                <children>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
-                     <HBox.margin>
-                        <Insets bottom="15.0" top="15.0" />
-                     </HBox.margin>
-                     <image>
-                        <Image url="@/images/icons/history/his_icon_RED.png" />
-                     </image>
-                  </ImageView>
                   <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="B-Red" text="HISTORIAL" HBox.hgrow="ALWAYS">
                      <HBox.margin>
                         <Insets bottom="5.0" top="5.0" />
-                     </HBox.margin></Button>
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons/history/his_icon_RED.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
                </children>
             </HBox>
+            <Separator maxWidth="1.7976931348623157E308" orientation="VERTICAL" VBox.vgrow="ALWAYS" />
             <Separator prefWidth="200.0" styleClass="separator-H-Red" />
             <HBox>
                <children>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
-                     <HBox.margin>
-                        <Insets bottom="15.0" top="15.0" />
-                     </HBox.margin>
-                     <image>
-                        <Image url="@/images/icons/config/config_icon_RED.png" />
-                     </image>
-                  </ImageView>
                   <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="B-Red" text="CONFIGURACION" HBox.hgrow="ALWAYS">
                      <HBox.margin>
                         <Insets bottom="5.0" top="5.0" />
-                     </HBox.margin></Button>
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons/config/config_icon_RED.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
                </children>
             </HBox>
          </children>
