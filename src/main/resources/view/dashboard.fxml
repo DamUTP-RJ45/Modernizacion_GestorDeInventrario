@@ -8,101 +8,113 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@/css/app.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <StackPane fx:id="contentPane" prefHeight="600.0" prefWidth="598.0" styleClass="stack-Layout" BorderPane.alignment="CENTER" />
+   </center>
    <left>
-      <VBox styleClass="sideBar1" BorderPane.alignment="CENTER">
+      <StackPane styleClass="stack-Layout" BorderPane.alignment="CENTER">
          <children>
-            <HBox styleClass="sideBar1-H" VBox.vgrow="NEVER">
+            <VBox styleClass="sideBar1">
                <children>
-                  <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@/images/icons/hamlogovector.png" />
-                     </image>
-                  </ImageView>
-                  <Separator orientation="VERTICAL" styleClass="separator-V-Red" />
-                  <VBox styleClass="sideBar1-V">
+                  <HBox styleClass="sideBar1-H" VBox.vgrow="NEVER">
                      <children>
-                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="title-White" text="CONTROL DE" textAlignment="CENTER" VBox.vgrow="ALWAYS">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </Label>
-                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="title-White" text="INVENTARIO" textAlignment="CENTER" VBox.vgrow="ALWAYS">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </Label>
-                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="SUCURSAL" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS" />
+                        <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/images/icons/hamlogovector.png" />
+                           </image>
+                        </ImageView>
+                        <Separator orientation="VERTICAL" styleClass="separator-V-Red" />
+                        <VBox styleClass="sideBar1-V">
+                           <children>
+                              <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="title" text="CONTROL DE" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="title" text="INVENTARIO" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="title" text="SUCURSAL" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
                      </children>
-                  </VBox>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Button graphicTextGap="5.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="B-Red" text="ENTRADAS" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons/entry/entry_icon_RED.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="B-Red" text="SALIDAS" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons/output/output_icon_RED.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="B-Red" text="HISTORIAL" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons/history/his_icon_RED.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Separator maxWidth="1.7976931348623157E308" orientation="VERTICAL" VBox.vgrow="ALWAYS" />
+                  <Separator prefWidth="200.0" styleClass="separator-H-Red" />
+                  <HBox>
+                     <children>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="B-Red" text="CONFIGURACION" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons/config/config_icon_RED.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
                </children>
-            </HBox>
-            <HBox>
-               <children>
-                  <Button graphicTextGap="5.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="B-Red" text="ENTRADAS" HBox.hgrow="ALWAYS">
-                     <HBox.margin>
-                        <Insets bottom="5.0" top="5.0" />
-                     </HBox.margin>
-                     <graphic>
-                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/icons/entry/entry_icon_RED.png" />
-                           </image>
-                        </ImageView>
-                     </graphic></Button>
-               </children>
-            </HBox>
-            <HBox>
-               <children>
-                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="B-Red" text="SALIDAS" HBox.hgrow="ALWAYS">
-                     <HBox.margin>
-                        <Insets bottom="5.0" top="5.0" />
-                     </HBox.margin>
-                     <graphic>
-                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/icons/output/output_icon_RED.png" />
-                           </image>
-                        </ImageView>
-                     </graphic></Button>
-               </children>
-            </HBox>
-            <HBox>
-               <children>
-                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="B-Red" text="HISTORIAL" HBox.hgrow="ALWAYS">
-                     <HBox.margin>
-                        <Insets bottom="5.0" top="5.0" />
-                     </HBox.margin>
-                     <graphic>
-                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/icons/history/his_icon_RED.png" />
-                           </image>
-                        </ImageView>
-                     </graphic></Button>
-               </children>
-            </HBox>
-            <Separator maxWidth="1.7976931348623157E308" orientation="VERTICAL" VBox.vgrow="ALWAYS" />
-            <Separator prefWidth="200.0" styleClass="separator-H-Red" />
-            <HBox>
-               <children>
-                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="B-Red" text="CONFIGURACION" HBox.hgrow="ALWAYS">
-                     <HBox.margin>
-                        <Insets bottom="5.0" top="5.0" />
-                     </HBox.margin>
-                     <graphic>
-                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/icons/config/config_icon_RED.png" />
-                           </image>
-                        </ImageView>
-                     </graphic></Button>
-               </children>
-            </HBox>
+            </VBox>
          </children>
-      </VBox>
+      </StackPane>
    </left>
 </BorderPane>
